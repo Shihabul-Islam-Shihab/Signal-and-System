@@ -1,0 +1,18 @@
+t1=-3:.1:0;
+x1=zeros(size(t1));
+t2=0:.1:1;
+x2=ones(size(t2));
+t3=1:.1:3;
+x3=zeros(size(t3));
+t=[t1 t2 t3];
+x=[x1 x2 x3];
+subplot(211);
+plot(t,x);
+title('Static,depend in present value');
+xlim([-4 4]);
+ylim([-1 2]);
+subplot(212);
+plot(t-1,2*x);
+title('Dynamic,depend of past value and amplitude is changeable');
+xlim([-4 4]);
+ylim([-1 3]);
